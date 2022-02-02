@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import ContactPage from './pages/ContactPage'
 import AboutPage from './pages/AboutPage'
 import Landing from './pages/Landing'
-
+import Projects from './pages/ProjectsPage'
 function App() {
   return (
     <Router>
@@ -16,6 +16,7 @@ function App() {
             <Route exact path='/' element={<Landing />} />
             <Route exact path='/contact' element={<ContactPage />} />
             <Route exact path='/about' element={<AboutPage />} />
+            <Route exact path='/projects' element={<Projects />} />
           </Routes>
         </Router>
   );
