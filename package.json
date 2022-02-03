@@ -1,5 +1,6 @@
 {
   "name": "reactportfolio",
+  "homepage": "http://hvoyvng.github.io/reactPortfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +11,9 @@
     "start:prod": "start server.js",
     "client": "cd client && npm run start",
     "install": "cd client && npm install",
-    "build": "cd client && npm run build"
+    "build": "cd client && npm run build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -22,7 +25,7 @@
   "bugs": {
     "url": "https://github.com/hvoyvng/reactPortfolio/issues"
   },
-  "homepage": "https://github.com/hvoyvng/reactPortfolio#readme",
+  
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
@@ -40,5 +43,8 @@
     "react-scripts": "^5.0.0",
     "reactstrap": "^9.0.1",
     "yocto-queue": "^1.0.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
