@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
           <Routes>
-            <Route exact path='/' element={<Landing />} />
+            <Route exact path='/reactPortfolio' element={<Landing />} />
             <Route exact path='/contact' element={<ContactPage />} />
             <Route exact path='/about' element={<AboutPage />} />
             <Route exact path='/project' element={<Projects />} />
