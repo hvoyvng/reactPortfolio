@@ -5,8 +5,9 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import SplashImage from './images/splash.jpeg'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
-import ContactPage from './pages/ContactPage'
+// import ContactPage from './pages/ContactPage'
 import AboutPage from './pages/AboutPage'
+import ContactPage from './pages/ContactPage'
 import Landing from './pages/Landing'
 import Projects from './pages/ProjectsPage'
 function App() {
@@ -16,9 +17,9 @@ function App() {
             <Route exact path='/' element={<Landing />} />
             <Route exact path='/contact' element={<ContactPage />} />
             <Route exact path='/about' element={<AboutPage />} />
-            <Route exact path='/projects' element={<Projects />} />
+            <Route exact path='/project' element={<Projects />} />
           </Routes>
-        </Router>
+    </Router>
   );
 }
 
